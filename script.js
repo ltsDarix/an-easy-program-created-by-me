@@ -15,10 +15,12 @@ for (let i = 0; i < 10000000; i++)  {
     ob.push(a);
 }
 
+alert ('Это база данных с квадратами чисел.');
+
 for (let i = 0; i < 1; i++) {
-    alert ('Это база данных с квадратами чисел.');
+   
     let aaa = +(prompt('Введите число: ', ''));
-    if (typeof (aaa) != null || '' ) {
+    if (typeof (aaa) != null && aaa != "") {
         alert ('Квадрат числа ' + aaa + ' равен ' + ob[aaa] + '.');
         i = i - 1;
     } else {
