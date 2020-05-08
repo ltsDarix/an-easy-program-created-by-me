@@ -20,11 +20,11 @@ alert ('Это база данных с квадратами чисел.');
 for (let i = 0; i < 1; i++) {
    
     let aaa = +(prompt('Введите число: ', ''));
-    if (typeof (aaa) != null && aaa != "") {
-        alert ('Квадрат числа ' + aaa + ' равен ' + ob[aaa] + '.');
+    if (typeof (aaa) == null || aaa == "" || isNaN (aaa)) {
+        alert ("Вы ввели не число!");
         i = i - 1;
     } else {
-        alert ("Вы ввели не число!");
+        alert ('Квадрат числа ' + aaa + ' равен ' + ob [aaa] + '.');
         i = i - 1;
     }
 
